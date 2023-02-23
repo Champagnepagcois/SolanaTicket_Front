@@ -632,7 +632,7 @@ export default function HomePage() {
                   >
                     <Iframe
                       className="google-map"
-                      url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29974.469402870927!2d120.94861466021855!3d14.106066818082482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd777b1ab54c8f%3A0x6ecc514451ce2be8!2sTagaytay%2C%20Cavite%2C%20Philippines!5e1!3m2!1sen!2smy!4v1670344209509!5m2!1sen!2smy"
+                      url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.702971040364!2d-99.12871994937629!3d19.511410943146803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9c228b343cf%3A0x2f403a140132e3e7!2sUPIITA%20-%20Unidad%20Profesional%20Interdisciplinaria%20en%20Ingenier%C3%ADa%20y%20Tecnolog%C3%ADas%20Avanzadas%20IPN!5e0!3m2!1ses-419!2smx!4v1677177885254!5m2!1ses-419!2smx"
                       width="100%"
                       display="block"
                       height="450"
