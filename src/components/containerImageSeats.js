@@ -11,7 +11,7 @@ import {
 class ContainerImageSeats extends Component {
   render() {
     return (
-      <Box sx={{ width: "50vw", height:"calc(100vh-80px)" }}>
+      <Box sx={{ width: "50vw", height:"calc(100vh-80px)",backgroundColor: "#f0f8ff" }}>
         <TransformWrapper
           initialScale={1}
           initialPositionX={200}

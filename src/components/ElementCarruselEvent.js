@@ -28,7 +28,9 @@ export default function ElementCarruselEvent({
   return (
     <>
       <Box sx={{ width: 450, height: 300, border: 0, marginRight: "20px" }}>
-        <Card sx={{ maxWidth: 450, maxHeight: 350 }}>
+        <Card
+          sx={{ maxWidth: 450, maxHeight: 350 }}
+        >
           <CardActionArea onClick={(e) => handleclicCard()}>
             <CardMedia
               sx={{ width: "450px", height: "200px", maxHeight: "150px" }}

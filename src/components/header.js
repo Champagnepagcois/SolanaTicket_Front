@@ -22,27 +22,40 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 export default function Header() {
   return (
-    <Box sx={{ flexGrow: 1,height:80}}>
+    <Box sx={{ flexGrow: 1, height: 80, maxHeight: 80 }}>
       <Grid container spacing={1}>
         <Grid item xs={6} md={6}>
-          <Item sx={{ display: "flex" }}>
-            <IconButton type="button" sx={{ p: "10px" }} aria-label="search">
-              <SearchIcon />
-            </IconButton>
+          <Item sx={{ display: "flex", boxShadow: 0 }}>
             <TextField
               label="Busca por artista, evento,equipo o destino"
               id="outlined-size-small"
               defaultValue=""
               fullWidth
             />
+            <IconButton type="button" sx={{ p: "10px" }} aria-label="search">
+              <SearchIcon />
+            </IconButton>
           </Item>
         </Grid>
         <Grid item xs={6} md={6}>
           <Grid container justifyContent="flex-end">
             <Grid item xs={4} md={6}></Grid>
             <Grid item xs={4} md={6}>
-              <Item sx={{ display: "flex", height: "100%",border:0 }}>
-                <Stack direction="row" spacing={4}>
+              <Item
+                sx={{
+                  display: "flex",
+                  height: "100%",
+                  border: 0,
+                  boxShadow: 0,
+                }}
+              >
+                <Stack
+                  direction="row"
+                  spacing={4}
+                  justifyContent="center"
+                  alignItems="center"
+                  sx={{ boxShadow: 0 }}
+                >
                   <Breadcrumbs aria-label="breadcrumb">
                     <Link underline="hover" color="inherit" href="/">
                       Mis evetos

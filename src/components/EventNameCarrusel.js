@@ -10,7 +10,7 @@ export default function EventNameCarrusel() {
         component="div"
         sx={{ marginBottom: "20px" }}
       >
-        Eventos principales
+        Artistas
       </Typography>
       <Grid
         sx={{
