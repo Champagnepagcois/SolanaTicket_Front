@@ -5,8 +5,21 @@ import { CardMedia } from "@mui/material";
 import { Button } from "@mui/material";
 import { red } from "@mui/material/colors";
 
-export default function ContainerResults({ name, date }) {
+export default function ContainerResults({
+  nameEvent,
+  date,
+  place,
+  hour,
+  placeLink,
+  country,
+  direction,
+  kindseat,
+  numseats,
+}) {
   const primary = red[500]; // #f44336
+  const handlePagePlace = (linkplace)=>{
+    alert(`${linkplace}`);
+  }
   return (
     <>
       <Box sx={{ width: "50vw", height: 250 }}>
@@ -23,23 +36,27 @@ export default function ContainerResults({ name, date }) {
               <Box sx={{ display: "flex", flexDirection: "column" }}>
                 <CardContent sx={{ flex: "1 0 auto" }}>
                   <Typography component="div" variant="h5">
-                    Drake & Billie Eilish & Blink 182 - Lollapalooza Chile 2023
-                    - 3 Días
+                    {nameEvent}
                   </Typography>
                   <Typography
                     variant="subtitle1"
                     color="text.secondary"
                     component="div"
                   >
-                    17 mar 2023 • TBA
+                    {date} • {hour ? hour : "TBA"}
                   </Typography>
                   <Typography
                     variant="subtitle1"
                     color="text.secondary"
                     component="div"
                   >
-                    <Button size="small">Parque O'Higgins</Button>, Santiago de
-                    Chile,
+                    <Button
+                      size="small"
+                      onClick={(e) => handlePagePlace(placeLink)}
+                    >
+                      {place+", "}
+                    </Button>
+                    {country}
                   </Typography>
                   <Grid container sx={{ display: "flex" }}>
                     <Grid sm={1}>
@@ -53,12 +70,16 @@ export default function ContainerResults({ name, date }) {
                     </Grid>
                     <Grid sm={4} justifyContent="flex-start">
                       <Typography
-                        sx={{ textAlign: "start", alignContent:"center"}}
+                        sx={{
+                          textAlign: "center",
+                          float: "left",
+                          marginLeft: 2,
+                        }}
                         color="blue"
                         component="div"
-                        variant="h6"
+                        variant="subtitle1"
                       >
-                        A23{"  "}
+                        {kindseat}
                       </Typography>
                     </Grid>
                     <Grid sm={4}>
@@ -67,13 +88,22 @@ export default function ContainerResults({ name, date }) {
                         color={primary}
                         component="div"
                       >
-                        Total de lugares 50
+                        Total de lugares {numseats}
                       </Typography>
                     </Grid>
                   </Grid>
 
                   <Grid container>
-                    <Grid item xs={8} md={6} justifyContent="flex-end">
+                    <Grid
+                      item
+                      xs={8}
+                      md={12}
+                      justifyContent="flex-end"
+                      sx={{ display: "flex" }}
+                    >
+                      <Button size="small" variant="outline">
+                        Ver mapa del lugar
+                      </Button>
                       <Button size="medium" variant="contained">
                         Adquirir
                       </Button>

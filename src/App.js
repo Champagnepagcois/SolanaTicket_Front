@@ -23,9 +23,21 @@ function App() {
         </a>
       </header>
   */}
-      <Header/>
-      <ContainerResults/>
-      <ContainerResults/>
+      <Header />
+      <ContainerResults
+        idEvent={"afasfsaf"}
+        nameEvent={
+          "Drake & Billie Eilish & Blink 182 - Lollapalooza Chile 2023- 3 Días"
+        }
+        date={"17 mar 2023"}
+        hour={"18:00"}
+        place={"Parque O'Higgins"}
+        placeLink={"https://es.wikipedia.org/wiki/Parque_O%27Higgins"}
+        country={"Santiago de Chile, Chile"}
+        kindseat={"A23"}
+        numseats={50}
+      />
+      <ContainerResults />
       <HomePage />
       {/*</div>*/}
     </>
