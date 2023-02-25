@@ -22,7 +22,7 @@ export default function MenuHomeOptions() {
           <Button size="medium" variant="contained">
             Conciertos y festivales
           </Button>
-          <Button size="medium" variant="outlined">
+          <Button size="medium" variant="contained">
             Deportes
           </Button>
           <Button size="medium" variant="contained">

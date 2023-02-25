@@ -10,7 +10,7 @@ export default function SearchPage() {
         sx={{
           display: "flex",
           flexDirection: "row",
-          height: "calc(90vh)",
+          height: "calc(90vh)"
         }}
       >
         <Box

@@ -12,7 +12,7 @@ export default function IndexPage() {
   return (
     <>
       <main>
-        <header className="site-header">
+        <header className="site-header" style={{display:"none"}}>
           <div className="container">
             <div className="row">
               <div className="col-lg-12 col-12 d-flex flex-wrap">
@@ -27,7 +27,7 @@ export default function IndexPage() {
           </div>
         </header>
 
-        <nav className="navbar navbar-expand-lg" style={{position:"absolute",width:"100%"}}>
+        <nav className="navbar navbar-expand-lg" style={{position:"absolute",width:"100%",display:"none"}}>
           <div className="container">
             <a className="navbar-brand" href="index.html">
               Festava Live
