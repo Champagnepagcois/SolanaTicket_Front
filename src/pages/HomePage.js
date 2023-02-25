@@ -1,44 +1,17 @@
 import React from "react";
 import Paper from "@mui/material/Paper";
-import Stack from '@mui/material/Stack';
-import { Box, Grid, Button } from "@mui/material";
-import ElementCarruselEvent from "../components/ElementCarruselEvent";
+import Stack from "@mui/material/Stack";
+import { Box } from "@mui/material";
+import MenuHomeOptions from "../components/menuHomeOptions";
+import Eventscarrusel from "../components/Eventscarrusel";
+import EventNameCarrusel from "../components/EventNameCarrusel";
 export default function HomePage() {
   return (
     <>
-      <Box sx={{ maxHeight: "90vh", height: "90vh" }}>
-        <Grid>
-          <Paper
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              flexWrap: "wrap",
-              listStyle: "none",
-              p: 0.5,
-              m: 4,
-            }}
-            elevation={0}
-            component="ul"
-          >
-            <Stack spacing={20} direction="row">
-              <Button size="medium" variant="contained">
-                Conciertos y festivales
-              </Button>
-              <Button size="medium" variant="outlined">
-                Deportes
-              </Button>
-              <Button size="medium" variant="contained">
-                Teatro y comedia
-              </Button>
-              <Button size="medium" variant="contained">
-                Viajes
-              </Button>
-            </Stack>
-          </Paper>
-        </Grid>
-        <Grid>
-            <ElementCarruselEvent/>
-        </Grid>
+      <Box sx={{ height: "auto" }}>
+        <MenuHomeOptions />
+        <EventNameCarrusel />
+        <Eventscarrusel />
       </Box>
     </>
   );

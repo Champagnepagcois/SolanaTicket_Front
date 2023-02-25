@@ -22,7 +22,7 @@ export default function ContainerResults({
   }
   return (
     <>
-      <Box sx={{ width: "calc(50vw-5px)", height: 250 }}>
+      <Box sx={{ width: "calc(50vw-5px)", height: 250}}>
         <Card sx={{ display: "flex" }}>
           <Grid container spacing={1}>
             <Grid item xs={4} md={3}>
@@ -92,7 +92,6 @@ export default function ContainerResults({
                       </Typography>
                     </Grid>
                   </Grid>
-
                   <Grid container>
                     <Grid
                       item
