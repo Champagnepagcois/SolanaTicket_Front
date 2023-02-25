@@ -1,0 +1,5 @@
+-Terminar carrusel de eventos
+-HAcer funcionar todos los clicks
+-Agregar estados
+-Configurrar firebase
+-agregar inicio de Wallet

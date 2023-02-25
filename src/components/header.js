@@ -22,7 +22,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 export default function Header() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1,height:80}}>
       <Grid container spacing={1}>
         <Grid item xs={6} md={6}>
           <Item sx={{ display: "flex" }}>
