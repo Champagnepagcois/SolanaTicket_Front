@@ -1,6 +1,8 @@
 import logo from "./logo.svg";
 import HomePage from "./pages/HomePage";
 import "./App.css";
+import Header from "./components/header";
+import ContainerResults from "./components/containerResults";
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
         </a>
       </header>
   */}
+      <Header/>
+      <ContainerResults/>
+      <ContainerResults/>
       <HomePage />
       {/*</div>*/}
     </>

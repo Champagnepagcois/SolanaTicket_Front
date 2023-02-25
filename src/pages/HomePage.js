@@ -27,7 +27,7 @@ export default function HomePage() {
           </div>
         </header>
 
-        <nav className="navbar navbar-expand-lg" style={{position:"absolute"}}>
+        <nav className="navbar navbar-expand-lg" style={{position:"absolute",width:"100%"}}>
           <div className="container">
             <a className="navbar-brand" href="index.html">
               Festava Live
