@@ -1,9 +1,10 @@
 import React from "react";
 import { Box, height, textAlign } from "@mui/system";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import Avatar from "@mui/material/Avatar";
@@ -22,9 +23,21 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 export default function Header() {
   return (
-    <Box sx={{ flexGrow: 1, height: 80, maxHeight: 80 }}>
+    <Box sx={{ flexGrow: 1, height: 80, maxHeight: 80, display: "flex" }}>
       <Grid container spacing={1}>
-        <Grid item xs={6} md={6}>
+        <Grid
+          item
+          xs={4}
+          md={2}
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Button variant="text" justifyContent="center" alignItems="center">
+            SolanaTicket
+          </Button>
+        </Grid>
+        <Grid item xs={6} md={5}>
           <Item sx={{ display: "flex", boxShadow: 0 }}>
             <TextField
               label="Busca por artista, evento,equipo o destino"
@@ -37,10 +50,9 @@ export default function Header() {
             </IconButton>
           </Item>
         </Grid>
-        <Grid item xs={6} md={6}>
+        <Grid item xs={6} md={5}>
           <Grid container justifyContent="flex-end">
-            <Grid item xs={4} md={6}></Grid>
-            <Grid item xs={4} md={6}>
+            <Grid item xs={4} md={7}>
               <Item
                 sx={{
                   display: "flex",
