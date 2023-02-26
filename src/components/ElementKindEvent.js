@@ -1,27 +1,24 @@
 import React from "react";
 import {
-  Button,
   Card,
   CardActionArea,
-  CardActions,
   CardContent,
   CardMedia,
-  Grid,
   Typography,
   Box,
 } from "@mui/material";
-export default function ElementKindEvent({ nameEvent }) {
+export default function ElementKindEvent({ nameEvent,imageLink }) {
   const handleclicCard = () => {
     alert("ME hiciste click");
   };
   return (
-    <Box sx={{ width: 250, height: 250, border: 0, marginRight: "20px" }}>
+    <Box sx={{ width: 280, height: 250, border: 0, marginRight: "40px", maxHeight:250 }}>
       <Card sx={{ maxWidth: 450, maxHeight: 350 }}>
         <CardActionArea onClick={(e) => handleclicCard()}>
           <CardMedia
-            sx={{ width: "250px", height: "200px", maxHeight: "150px" }}
-            image="https://bikubo.com/images/seating-circular.jpg"
-            title="Concert's map"
+            sx={{ width: "280px", height: "200px", maxHeight: "150px" }}
+            image={imageLink}
+            title={"Image "+nameEvent}
             alt="Artist"
           />
           <CardContent>

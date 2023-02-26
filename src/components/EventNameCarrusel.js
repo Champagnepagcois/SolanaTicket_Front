@@ -1,5 +1,6 @@
 import React from "react";
 import ElementKindEvent from "./ElementKindEvent";
+import Eventscarrusel from "./Eventscarrusel";
 import { Grid, Typography } from "@mui/material";
 export default function EventNameCarrusel() {
   return (
@@ -10,36 +11,53 @@ export default function EventNameCarrusel() {
         component="div"
         sx={{ marginBottom: "20px" }}
       >
-        Artistas
+        Artistas sobresalientes
       </Typography>
       <Grid
         sx={{
           height: 250,
           display: "flex",
           flexDirection: "row",
+          overflow: "hidden",
           overflowX: "auto",
         }}
         spacing={2}
       >
         <ElementKindEvent
-          nameEvent={
-            "Drake"
+          nameEvent={"Drake"}
+          imageLink={
+            "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9"
           }
-          date={"17 mar 2023"}
-          hour={"18:00"}
-          place={"Parque O'Higgins"}
-          placeLink={"https://es.wikipedia.org/wiki/Parque_O%27Higgins"}
-          country={"Santiago de Chile, Chile"}
         />
         <ElementKindEvent
-          nameEvent={
-            "Billie Eilish"
+          nameEvent={"Coldplay"}
+          imageLink={
+            "https://i.scdn.co/image/ab6761610000e5eb989ed05e1f0570cc4726c2d3"
           }
-          date={"17 mar 2023"}
-          hour={"18:00"}
-          place={"Parque O'Higgins"}
-          placeLink={"https://es.wikipedia.org/wiki/Parque_O%27Higgins"}
-          country={"Santiago de Chile, Chile"}
+        />
+        <ElementKindEvent
+          nameEvent={"Bad Bunny"}
+          imageLink={
+            "https://i.scdn.co/image/ab6761610000e5eb8ee9a6f54dcbd4bc95126b14"
+          }
+        />
+        <ElementKindEvent
+          nameEvent={"Kanye West"}
+          imageLink={
+            "https://i.scdn.co/image/ab6761610000e5eb867008a971fae0f4d913f63a"
+          }
+        />
+        <ElementKindEvent
+          nameEvent={"Post Malone"}
+          imageLink={
+            "https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc"
+          }
+        />
+        <ElementKindEvent
+          nameEvent={"Twenty One Pilots"}
+          imageLink={
+            "https://i.scdn.co/image/ab6761610000e5eb196972172c37d934d9ca8093"
+          }
         />
       </Grid>
     </Grid>

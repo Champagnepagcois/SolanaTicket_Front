@@ -64,7 +64,7 @@ export default function Header(props) {
             <Grid item xs={6} md={5}>
               <Grid sx={{ display: "flex", boxShadow: 0 }}>
                 <TextField
-                  label="Busca por artista, evento,equipo o destino"
+                  label="Buscar artista"
                   id="outlined-size-small"
                   defaultValue=""
                   fullWidth

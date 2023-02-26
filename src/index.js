@@ -1,28 +1,35 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Provider } from "react-redux";
+import { render } from "react-dom";
+import store from "./redux/store";
 
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
-import Header from "./components/header";
 import IndexPage from "./pages/IndexPage";
 import HomePage from "./pages/HomePage";
-import ErrorPage from "./pages/ErrorPage";
 import Root from "./routes/root";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+const rootElement = document.getElementById("root");
+
+//root.render(
+render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Root/>}>
-          <Route path="index" element={<IndexPage />} />
-          <Route path="home" element={<HomePage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Root />}>
+            <Route path="index" element={<IndexPage />} />
+            <Route path="home" element={<HomePage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </Provider>
+  </React.StrictMode>,
+    rootElement
 );
 /*
 <React.StrictMode>

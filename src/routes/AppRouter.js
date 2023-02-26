@@ -4,6 +4,13 @@ import { Outlet } from "react-router";
 import Header from "../components/header";
 
 export default function AppRouter() {
+  useEffect(() => {
+    if (navigator.geolocation) {
+      alert(navigator.geolocation.getCurrentPosition());
+    } else {
+      alert("No se puedo obtener");
+    }
+  }, []);
   return (
     <>
       <Grid container sx={{ display: "flex", flexDirection: "column" }}>
