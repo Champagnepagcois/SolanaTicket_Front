@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, height, textAlign } from "@mui/system";
 import { Grid, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -12,13 +12,14 @@ import Stack from "@mui/material/Stack";
 import { Person } from "@mui/icons-material";
 import { deepPurple } from "@mui/material/colors";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
-import Tooltip from "@mui/material/Tooltip";
 import Link from "@mui/material/Link";
-import { Container } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import { Outlet } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { loadEventsSearch } from "../redux/actions/PEventsActions";
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -28,11 +29,33 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 export default function Header(props) {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  let [searchParams, setSearchParams] = useSearchParams();
+  let [searchInput, setSearchInput] = useState("");
   const trigger = useScrollTrigger();
-
+  const handleHomeRedirect = (e) => {
+    e.preventDefault();
+    navigate("../home", { replace: true });
+  };
+  const handleViewerSearch = (e) => {
+    setSearchInput(e.target.value);
+    if (searchInput.length == 1) {
+      navigate("../home", { replace: true });
+    }
+  };
+  const handleSubmitSearch = (e) => {
+    setSearchInput(e.target.value);
+  };
+  const handleSearch = (e) => {
+    if (e.key === "Enter" && searchInput.length != 0) {
+      dispatch(loadEventsSearch(searchInput));
+      navigate(`../search?${searchInput}`, { replace: true });
+    }
+  };
   return (
     <AppBar className={trigger}>
-      <Toolbar sx={{ backgroundColor: "white",padding:0}}>
+      <Toolbar sx={{ backgroundColor: "white", padding: 0 }}>
         <Box
           sx={{
             flexGrow: 1,
@@ -57,6 +80,7 @@ export default function Header(props) {
                 variant="text"
                 justifyContent="center"
                 alignItems="center"
+                onClick={handleHomeRedirect}
               >
                 SolanaTicket
               </Button>
@@ -69,13 +93,17 @@ export default function Header(props) {
                   defaultValue=""
                   fullWidth
                   margin="none"
+                  value={searchInput}
+                  onKeyPress={handleSearch}
+                  onChange={(event) => handleViewerSearch(event)}
                 />
                 <IconButton
                   type="button"
                   sx={{ p: "10px" }}
                   aria-label="search"
+                  onClick={handleSearch}
                 >
-                  <SearchIcon />
+                  <SearchIcon onClick={handleSearch} />
                 </IconButton>
               </Grid>
             </Grid>

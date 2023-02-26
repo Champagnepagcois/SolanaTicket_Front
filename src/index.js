@@ -11,6 +11,7 @@ import reportWebVitals from "./reportWebVitals";
 import IndexPage from "./pages/IndexPage";
 import HomePage from "./pages/HomePage";
 import Root from "./routes/root";
+import SearchPage from "./pages/SearchPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const rootElement = document.getElementById("root");
@@ -24,12 +25,13 @@ render(
           <Route path="/" element={<Root />}>
             <Route path="index" element={<IndexPage />} />
             <Route path="home" element={<HomePage />} />
+            <Route path="search" element={<SearchPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
     </Provider>
   </React.StrictMode>,
-    rootElement
+  rootElement
 );
 /*
 <React.StrictMode>

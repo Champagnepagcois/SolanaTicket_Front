@@ -7,6 +7,7 @@ import { red } from "@mui/material/colors";
 
 export default function ContainerResults({
   nameEvent,
+  linkImage,
   date,
   place,
   hour,
@@ -17,19 +18,19 @@ export default function ContainerResults({
   numseats,
 }) {
   const primary = red[500]; // #f44336
-  const handlePagePlace = (linkplace)=>{
+  const handlePagePlace = (linkplace) => {
     alert(`${linkplace}`);
-  }
+  };
   return (
     <>
-      <Box sx={{ width: "calc(50vw-5px)", height: 250}}>
+      <Box sx={{ width: "calc(50vw-5px)", height: 250 }}>
         <Card sx={{ display: "flex" }}>
           <Grid container spacing={1}>
             <Grid item xs={4} md={3}>
               <CardMedia
                 sx={{ height: 200, width: 200 }}
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmhS88jdv21SnIWZrt0FKVVtjwdBsr9_5QXw&usqp=CAU"
-                title="Drake concert"
+                image={linkImage}
+                title={nameEvent}
               />
             </Grid>
             <Grid item xs={8} md={9}>
@@ -54,7 +55,7 @@ export default function ContainerResults({
                       size="small"
                       onClick={(e) => handlePagePlace(placeLink)}
                     >
-                      {place+", "}
+                      {place + ", "}
                     </Button>
                     {country}
                   </Typography>
@@ -83,13 +84,13 @@ export default function ContainerResults({
                       </Typography>
                     </Grid>
                     <Grid sm={4}>
-                      <Typography
+                      {/*<Typography
                         variant="subtitle1"
                         color={primary}
                         component="div"
                       >
                         Total de lugares {numseats}
-                      </Typography>
+                      </Typography>*/}
                     </Grid>
                   </Grid>
                   <Grid container>
@@ -100,9 +101,9 @@ export default function ContainerResults({
                       justifyContent="flex-end"
                       sx={{ display: "flex" }}
                     >
-                      <Button size="small" variant="outline">
+                      {/*<Button size="small" variant="outline">
                         Ver mapa del lugar
-                      </Button>
+                      </Button>*/}
                       <Button size="medium" variant="contained">
                         Adquirir
                       </Button>

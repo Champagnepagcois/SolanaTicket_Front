@@ -14,8 +14,8 @@ class ContainerImageSeats extends Component {
       <Box sx={{ width: "50vw", height:"calc(100vh-80px)",backgroundColor: "#f0f8ff" }}>
         <TransformWrapper
           initialScale={1}
-          initialPositionX={200}
-          initialPositionY={100}
+          initialPositionX={0}
+          initialPositionY={0}
         >
           {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
             <React.Fragment>

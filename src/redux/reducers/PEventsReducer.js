@@ -17,7 +17,7 @@ export const PEventsReducer = (state = initialState, { type, payload }) => {
       return { ...state, loading: false, error: payload.mesage };
 
     case ActionTypes.LOAD_SEARCH_EVENTS_REQUEST:
-      return { ...state, loading: true };
+      return { ...state, loading: true,search:[] };
     case ActionTypes.LOAD_SEARCH_EVENTS_SUCCESS:
       return { ...state, loading: false, search: payload || [] };
     case ActionTypes.LOAD_SEARCH_EVENTS_FAILURE:
