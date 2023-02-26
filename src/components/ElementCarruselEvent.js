@@ -28,11 +28,11 @@ export default function ElementCarruselEvent({
   };
   return (
     <>
-      <Box sx={{ width: 450, height: 450, border: 0 }}>
-        <Card sx={{ width: 450, height: 350 }}>
+      <Box sx={{ width: 400, height: 450, border: 0}}>
+        <Card sx={{ width: 400, height: 350 }}>
           <CardActionArea onClick={(e) => handleclicCard()}>
             <CardMedia
-              sx={{ width: 450, height: 200, maxHeight: 200 }}
+              sx={{ width: 400, height: 200, maxHeight: 200 }}
               image={linkImage}
               title={nameEvent}
               alt={nameEvent}

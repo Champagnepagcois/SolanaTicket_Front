@@ -32,7 +32,7 @@ export default function Header(props) {
 
   return (
     <AppBar className={trigger}>
-      <Toolbar sx={{ backgroundColor: "white" }}>
+      <Toolbar sx={{ backgroundColor: "white",padding:0}}>
         <Box
           sx={{
             flexGrow: 1,

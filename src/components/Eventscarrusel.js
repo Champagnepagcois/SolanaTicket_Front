@@ -16,20 +16,22 @@ export default function Eventscarrusel() {
   };
 
   const cardEvent = listPrincipalEvents?.map((event) => (
-    <Grid item xs={1} md={4} justifyContent="center">
-      <ElementCarruselEvent
-        nameEvent={event.description}
-        linkImage={event.image}
-        date={getParseDate(event.startDate)}
-        hour={getParseHour(event.startDate)}
-        place={event.location.name}
-        placeLink={event.location.sameAs}
-        country={
-          event.location.address.addressLocality +
-          ", " +
-          event.location.address.addressCountry
-        }
-      />
+    <Grid item xs={1} md={4} justifyContent="center" sx={{justifyContent:"center"}}>
+      <Box justifyContent="center" sx={{justifyContent:"center"}}>
+        <ElementCarruselEvent
+          nameEvent={event.description}
+          linkImage={event.image}
+          date={getParseDate(event.startDate)}
+          hour={getParseHour(event.startDate)}
+          place={event.location.name}
+          placeLink={event.location.sameAs}
+          country={
+            event.location.address.addressLocality +
+            ", " +
+            event.location.address.addressCountry
+          }
+        />
+      </Box>
     </Grid>
   ));
   return (
@@ -42,8 +44,13 @@ export default function Eventscarrusel() {
       >
         Eventos en tu ciudad
       </Typography>
-      <Box>
-        <Grid container justifyContent="center">
+      <Box justifyContent="center">
+        <Grid
+          container
+          justifyContent="center"
+          alignContent="center"
+          spacing={0}
+        >
           {cardEvent}
         </Grid>
       </Box>

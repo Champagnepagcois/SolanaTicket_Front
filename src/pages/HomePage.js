@@ -38,7 +38,7 @@ export default function HomePage() {
           <Grid item>
             <EventNameCarrusel />
           </Grid>
-          <Grid item justifyContent="center">
+          <Grid item justifyContent="center" width="100vw">
             <Eventscarrusel />
           </Grid>
         </Grid>
