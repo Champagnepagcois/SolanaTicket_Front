@@ -13,7 +13,7 @@ export default function LoadingSearch() {
   const primary = red[500]; // #f44336
   return (
     <>
-      <Box sx={{ width: "calc(50vw-5px)", height: 250 }}>
+      <Box sx={{ width: "calc(50vw-5px)", height:"50vh" }}>
         <Card sx={{ display: "flex" }}>
           <Grid item xs={8} md={12}>
             <Box sx={{ display: "flex", flexDirection: "column" }}>

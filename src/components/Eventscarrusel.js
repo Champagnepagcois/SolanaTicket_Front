@@ -19,8 +19,14 @@ export default function Eventscarrusel() {
   };
 
   const cardEvent = listPrincipalEvents?.map((event) => (
-    <Grid item xs={1} md={4} justifyContent="center" sx={{justifyContent:"center"}}>
-      <Box justifyContent="center" sx={{justifyContent:"center"}}>
+    <Grid
+      item
+      xs={1}
+      md={4}
+      justifyContent="center"
+      sx={{ justifyContent: "center" }}
+    >
+      <Box justifyContent="center" sx={{ justifyContent: "center" }}>
         <ElementCarruselEvent
           nameEvent={event.description}
           linkImage={event.image}
@@ -46,7 +52,7 @@ export default function Eventscarrusel() {
         component="div"
         sx={{ marginBottom: "20px" }}
       >
-        Eventos en tu ciudad
+        Proximos eventos en tu ciudad
       </Typography>
       <Box justifyContent="center">
         <Grid

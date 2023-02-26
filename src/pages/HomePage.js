@@ -32,9 +32,9 @@ export default function HomePage() {
     <>
       <Box sx={{ height: "auto", marginTop: "10vh" }}>
         <Grid container>
-          <Grid item>
+          {/*<Grid item>
             <MenuHomeOptions />
-          </Grid>
+  </Grid>*/}
           <Grid item>
             <EventNameCarrusel />
           </Grid>

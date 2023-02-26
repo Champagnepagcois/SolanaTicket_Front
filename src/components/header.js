@@ -20,6 +20,9 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { loadEventsSearch } from "../redux/actions/PEventsActions";
 import { MirrorWorld, ClusterEnvironment } from "@mirrorworld/web3.js";
+import { loadLogin, loadLogout } from "../redux/actions/loginAction";
+import { useSelector } from "react-redux";
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -28,28 +31,19 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 export default function Header(props) {
+  const user = useSelector((state) => state.token);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [user, setUser] = useState({
-    login: false,
-    data: [],
-  });
   let [searchParams, setSearchParams] = useSearchParams();
   let [searchInput, setSearchInput] = useState("");
   const trigger = useScrollTrigger();
-  const URLTokenMirror = "mw_U9w4i8sh6hALNUWBE89p0JNzQ2imgg4MfAX";
-  const mirrorworld = new MirrorWorld({
-    //apiKey: `${process.env.REACT_APP_MIRROR_WORLD_API_URL_KEY}`, // Replace this with the API Key for your project
-    apiKey: URLTokenMirror,
-    env: ClusterEnvironment.testnet, // Can be ClusterEnvionment.mainnet for mainnet
-  });
   const login = async (e) => {
     alert("Para cerrar sesion da clic en donde dice tu usuario");
-    const { user } = await mirrorworld.login();
-    setUser({ ...user, data: user, login: true });
+    dispatch(loadLogin());
   };
   const logout = () => {
-    setUser({ ...user, data: [], login: false });
+    alert("Sesion cerrada");
+    dispatch(loadLogout());
   };
   const handleHomeRedirect = (e) => {
     e.preventDefault();
@@ -159,7 +153,7 @@ export default function Header(props) {
                             user.login ? () => logout() : (e) => login(e)
                           }
                         >
-                          {user.login ? user.data.username : "Iniciar sesion"}
+                          {user.login ? user.data.user.username : "Iniciar sesion"}
                         </Button>
                         {/*<Link
                           underline="hover"
