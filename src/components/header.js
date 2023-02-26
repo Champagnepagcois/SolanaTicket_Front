@@ -19,8 +19,7 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { loadEventsSearch } from "../redux/actions/PEventsActions";
-
-
+import { MirrorWorld, ClusterEnvironment } from "@mirrorworld/web3.js";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -31,9 +30,27 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function Header(props) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const [user, setUser] = useState({
+    login: false,
+    data: [],
+  });
   let [searchParams, setSearchParams] = useSearchParams();
   let [searchInput, setSearchInput] = useState("");
   const trigger = useScrollTrigger();
+  const URLTokenMirror = "mw_U9w4i8sh6hALNUWBE89p0JNzQ2imgg4MfAX";
+  const mirrorworld = new MirrorWorld({
+    //apiKey: `${process.env.REACT_APP_MIRROR_WORLD_API_URL_KEY}`, // Replace this with the API Key for your project
+    apiKey: URLTokenMirror,
+    env: ClusterEnvironment.testnet, // Can be ClusterEnvionment.mainnet for mainnet
+  });
+  const login = async (e) => {
+    alert("Para cerrar sesion da clic en donde dice tu usuario");
+    const { user } = await mirrorworld.login();
+    setUser({ ...user, data: user, login: true });
+  };
+  const logout = () => {
+    setUser({ ...user, data: [], login: false });
+  };
   const handleHomeRedirect = (e) => {
     e.preventDefault();
     navigate("../home", { replace: true });
@@ -127,7 +144,7 @@ export default function Header(props) {
                       sx={{ boxShadow: 0, padding: 0 }}
                     >
                       <Breadcrumbs aria-label="breadcrumb" sx={{ padding: 0 }}>
-                        <Link underline="hover" color="inherit" href="/">
+                        {/*<Link underline="hover" color="inherit" href="/">
                           Mis evetos
                         </Link>
                         <Link
@@ -136,15 +153,22 @@ export default function Header(props) {
                           href="/material-ui/getting-started/installation/"
                         >
                           Core
-                        </Link>
-                        <Link
+                  </Link>*/}
+                        <Button
+                          onClick={
+                            user.login ? () => logout() : (e) => login(e)
+                          }
+                        >
+                          {user.login ? user.data.username : "Iniciar sesion"}
+                        </Button>
+                        {/*<Link
                           underline="hover"
                           color="text.primary"
-                          href="/material-ui/react-breadcrumbs/"
                           aria-current="page"
+                          onClick={(e) => login(e)}
                         >
-                          Buy Ticket
-                        </Link>
+                          {user.login ? user.data.username : "Iniciar sesion"}
+                </Link>*/}
                       </Breadcrumbs>
                       <Avatar
                         alt="Remy Sharp"

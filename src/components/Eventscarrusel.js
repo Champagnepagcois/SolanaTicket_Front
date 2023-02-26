@@ -1,10 +1,13 @@
 import React from "react";
 import ElementCarruselEvent from "./ElementCarruselEvent";
 import { useSelector, useDispatch } from "react-redux";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 import { Card, Box, CardContent, Grid, Typography } from "@mui/material";
 
 export default function Eventscarrusel() {
+  let [searchParams, setSearchParams] = useSearchParams();
+
   const listPrincipalEvents = useSelector((state) => state.allEvents.top);
   const getParseDate = (olddate) => {
     const date = new Date(olddate);
@@ -30,6 +33,7 @@ export default function Eventscarrusel() {
             ", " +
             event.location.address.addressCountry
           }
+          nameArtist={event.name}
         />
       </Box>
     </Grid>

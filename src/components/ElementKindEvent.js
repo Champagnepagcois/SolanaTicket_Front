@@ -1,3 +1,4 @@
+import { useSelector, useDispatch } from "react-redux";
 import React, { useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
@@ -9,11 +10,14 @@ import {
   Typography,
   Box,
 } from "@mui/material";
-export default function ElementKindEvent({ nameEvent, imageLink }) {
+import { loadEventsSearch } from "../redux/actions/PEventsActions";
+export default function ElementKindEvent({ nameEvent, imageLink, nameArtist }) {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleclicCard = (searchInput) => {
-    navigate(`../search?${searchInput}`, { replace: true });
+    dispatch(loadEventsSearch(searchInput));
+    navigate(`../search`, { replace: true });
   };
   return (
     <Box
@@ -24,7 +28,7 @@ export default function ElementKindEvent({ nameEvent, imageLink }) {
         marginRight: "40px",
         maxHeight: 250,
       }}
-      onClick={(e) => handleclicCard(nameEvent)}
+      onClick={(e) => handleclicCard(nameArtist)}
     >
       <Card sx={{ maxWidth: 450, maxHeight: 350, cursor: "default" }}>
         <CardActionArea>
