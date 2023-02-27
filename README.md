@@ -4,15 +4,15 @@
 Nuestro proyecto está revolucionando la forma en que se compran y venden boletos mediante el uso de la tecnología blockchain. Hemos creado una plataforma que permite a los organizadores de eventos vender entradas directamente a los fans, sin necesidad de intermediarios como revendedores de entradas o revendedores.
 
 ![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2829).png)
-![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2829).png?raw=true)![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2830).png?raw=true)
-![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2831).png?raw=true)
-![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2832).png?raw=true)
-![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2833).png?raw=true)
-![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2834).png?raw=true)
-![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2835).png?raw=true)
-![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (28336).png?raw=true)
-![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2837).png?raw=true)
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2830).png)
+![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2831).png)
+![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2832).png)
+![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2833).png)
+![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2834).png)
+![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2835).png)
+![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2836).png)
+![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2837).png)
+
 
 # Getting Started with Create React App
 
