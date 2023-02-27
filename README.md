@@ -2,15 +2,25 @@
 # SolanaTicket
 
 Nuestro proyecto está revolucionando la forma en que se compran y venden boletos mediante el uso de la tecnología blockchain. Hemos creado una plataforma que permite a los organizadores de eventos vender entradas directamente a los fans, sin necesidad de intermediarios como revendedores de entradas o revendedores.
-
+**Esta es el index, la pagina del principio**
 ![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2829).png)
+**Esta es el index, la pagina del principio, en esta se muestran los diferentes eventos que se podrian hacer**
 ![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2830).png)
+**Esta es el Home, la pagina donde ves los artistas sobresalientes, y tambien ves los eventos que estan por ocurrir**
+
 ![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2831).png)
+**Esta es el Buscador, En este caso le dimos clic en uno de los artistas sobresalientes (Drake) y nos muestra los proximos eventos que habrá, ademas del mapa del lugar del evento**
+
 ![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2832).png)
+**Le dimos clic en Adquirir y automiticaente nos muestra las opciones de hacer login**
 ![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2833).png)
+**Introduci mis claves y automaticamente empezo a hacer el login (Utilizamos MirrorWorld)**
 ![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2834).png)
+**Aqui ya esta listo el Login**
 ![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2835).png)
+**Volvemos a dar clic en Adquirir pero esta vez ya hicimos login**
 ![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2836).png)
+**Se realizo la compra**
 ![My Remote Image](https://raw.githubusercontent.com/Champagnepagcois/SolanaTicket_Front/main/src/images/ss/Captura%20de%20pantalla%20(2837).png)
 
 
