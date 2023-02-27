@@ -1,3 +1,13 @@
+
+# SolanaTicket
+
+Nuestro proyecto está revolucionando la forma en que se compran y venden boletos mediante el uso de la tecnología blockchain. Hemos creado una plataforma que permite a los organizadores de eventos vender entradas directamente a los fans, sin necesidad de intermediarios como revendedores de entradas o revendedores.
+
+
+![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2829).png?raw=true)![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2830).png?raw=true)![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2831).png?raw=true)![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2832).png?raw=true)![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2833).png?raw=true)
+![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2834).png?raw=true)![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2835).png?raw=true)![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (28336).png?raw=true)![alt text](https://github.com/[Champagnepagcois]/[SolanaTicket_Front]/blob/[main]/Captura de pantalla (2837).png?raw=true)
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +78,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
