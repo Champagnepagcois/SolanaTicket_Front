@@ -7,7 +7,10 @@ import pexels2022395 from "../video/pexels-2022395.mp4";
 import pexels from "../images/pexels-alexander-suhorucov-6457579.jpg";
 import joecalih from "../images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg";
 import soundtrap from "../images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg";
+import formula1 from "../images/f1-defrente-luis-jose-torrealba-E3PiwZJ8i1M-unsplash.jpg";
+import teatro from "../images/teatro-yiran-ding-vtZqNeV_dlA-unsplash.jpg";
 import abstral from "../images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg";
+import { Link } from "react-router-dom";
 export default function IndexPage() {
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(function (position) {
@@ -32,7 +35,6 @@ export default function IndexPage() {
             </div>
           </div>
         </header>
-
         <nav
           className="navbar navbar-expand-lg"
           style={{ position: "absolute", width: "100%", display: "none" }}
@@ -109,7 +111,6 @@ export default function IndexPage() {
             </div>
           </div>
         </nav>
-
         <section className="hero-section" id="section_1">
           <div className="section-overlay"></div>
 
@@ -120,16 +121,16 @@ export default function IndexPage() {
 
                 <h1 className="text-white mb-5">Night Live 2023</h1>
 
-                <a className="btn custom-btn smoothscroll" href="#section_2">
-                  Let's begin
-                </a>
+                <Link className="btn custom-btn smoothscroll" to="../home">
+                  Explorar
+                </Link>
               </div>
 
               <div className="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
                 <div className="date-wrap">
                   <h5 className="text-white">
                     <i className="custom-icon bi-clock me-2"></i>
-                    10 - 12<sup>th</sup>, Dec 2023
+                    10 - 12<sup>th</sup>, March 2023
                   </h5>
                 </div>
 
@@ -174,7 +175,6 @@ export default function IndexPage() {
             </video>
           </div>
         </section>
-
         <section className="about-section section-padding" id="section_2">
           <div className="container">
             <div className="row">
@@ -238,21 +238,20 @@ export default function IndexPage() {
             </div>
           </div>
         </section>
-
         <section className="artists-section section-padding" id="section_3">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-12 text-center">
-                <h2 className="mb-4">Meet Artists</h2>
+                <h2 className="mb-4">Algunos eventos</h2>
               </div>
 
               <div className="col-lg-5 col-12">
                 <div className="artists-thumb">
                   <div className="artists-image-wrap">
-                    <img src={joecalih} className="artists-image img-fluid" />
+                    <img src={formula1} className="artists-image img-fluid" />
                   </div>
 
-                  <div className="artists-hover">
+                  {/*<div className="artists-hover">
                     <p>
                       <strong>Name:</strong>
                       Madona
@@ -272,7 +271,7 @@ export default function IndexPage() {
                       <strong>Youtube Channel:</strong>
                       <a href="#">Madona Official</a>
                     </p>
-                  </div>
+                  </div>*/}
                 </div>
               </div>
 
@@ -282,7 +281,7 @@ export default function IndexPage() {
                     <img src={abstral} className="artists-image img-fluid" />
                   </div>
 
-                  <div className="artists-hover">
+                  {/*<div className="artists-hover">
                     <p>
                       <strong>Name:</strong>
                       Rihana
@@ -302,13 +301,13 @@ export default function IndexPage() {
                       <strong>Youtube Channel:</strong>
                       <a href="#">Rihana Official</a>
                     </p>
-                  </div>
+                </div>*/}
                 </div>
 
                 <div className="artists-thumb">
-                  <img src={soundtrap} className="artists-image img-fluid" />
+                  <img src={teatro} className="artists-image img-fluid" />
 
-                  <div className="artists-hover">
+                  {/*<div className="artists-hover">
                     <p>
                       <strong>Name:</strong>
                       Bruno Bros
@@ -328,13 +327,13 @@ export default function IndexPage() {
                       <strong>Youtube Channel:</strong>
                       <a href="#">Bruno Official</a>
                     </p>
-                  </div>
+              </div>*/}
                 </div>
               </div>
             </div>
           </div>
         </section>
-
+        {/*
         <section className="schedule-section section-padding" id="section_4">
           <div className="container">
             <div className="row">
@@ -420,7 +419,7 @@ export default function IndexPage() {
             </div>
           </div>
         </section>
-
+        */}
         <section
           className="pricing-section section-padding section-bg"
           id="section_5"
@@ -428,7 +427,7 @@ export default function IndexPage() {
           <div className="container">
             <div className="row">
               <div className="col-lg-8 col-12 mx-auto">
-                <h2 className="text-center mb-4">Plans, you' love</h2>
+                <h2 className="text-center mb-4">¿Qué usuario eres?</h2>
               </div>
 
               <div className="col-lg-6 col-12">
@@ -436,34 +435,40 @@ export default function IndexPage() {
                   <div className="d-flex">
                     <div>
                       <h3>
-                        <small>Early Bird</small> $120
+                        Promotor de eventos
+                        {/*<small>Early Bird</small> $120*/}
                       </h3>
 
-                      <p>Including good things:</p>
+                      <p>con tu cuenta podrás:</p>
+                      <p className="pricing-tag ms-auto">
+                        <span>100%</span>Garantizados
+                      </p>
                     </div>
 
-                    <p className="pricing-tag ms-auto">
+                    {/*<p className="pricing-tag ms-auto">
                       Save up to <span>50%</span>
-                    </p>
+                    </p>*/}
                   </div>
 
                   <ul className="pricing-list mt-3">
                     <li className="pricing-list-item">
-                      platform for potential customers
+                      Crear eventos facilmente
                     </li>
 
-                    <li className="pricing-list-item">digital experience</li>
+                    <li className="pricing-list-item">
+                      Establecer precios fijos
+                    </li>
 
-                    <li className="pricing-list-item">high-quality sound</li>
-
-                    <li className="pricing-list-item">standard content</li>
+                    <li className="pricing-list-item">
+                      Garantizar tus eventos 100% libres de fraudes
+                    </li>
                   </ul>
 
-                  <a
+                  {/*<a
                     className="link-fx-1 color-contrast-higher mt-4"
                     href="ticket.html"
                   >
-                    <span>Buy Ticket</span>
+                    <span>Empear a crear eventos</span>
                     <svg
                       className="icon"
                       viewBox="0 0 32 32"
@@ -480,7 +485,7 @@ export default function IndexPage() {
                         <line x1="16" y1="12" x2="22" y2="18"></line>
                       </g>
                     </svg>
-                  </a>
+                  </a>*/}
                 </div>
               </div>
 
@@ -489,32 +494,34 @@ export default function IndexPage() {
                   <div className="d-flex">
                     <div>
                       <h3>
-                        <small>Standard</small> $240
+                        Persona que disfruta de eventos
+                        {/*<small>Standard</small> $240*/}
                       </h3>
 
-                      <p>What makes a premium festava?</p>
+                      <p>con tu cuenta podrás:</p>
+                      <p className="pricing-tag ms-auto">
+                        <span>100%</span>protegidos
+                      </p>
                     </div>
                   </div>
 
                   <ul className="pricing-list mt-3">
                     <li className="pricing-list-item">
-                      platform for potential customers
+                      Comprar boletos para tus eventos favoritos
                     </li>
 
-                    <li className="pricing-list-item">digital experience</li>
+                    <li className="pricing-list-item">
+                      Comprar con tu wallet digital
+                    </li>
 
-                    <li className="pricing-list-item">high-quality sound</li>
-
-                    <li className="pricing-list-item">premium content</li>
-
-                    <li className="pricing-list-item">live chat support</li>
+                    <li className="pricing-list-item">Compra 100% online</li>
                   </ul>
 
-                  <a
+                  <Link
+                    to="/home"
                     className="link-fx-1 color-contrast-higher mt-4"
-                    href="ticket.html"
                   >
-                    <span>Buy Ticket</span>
+                    <span>Buscar eventos</span>
                     <svg
                       className="icon"
                       viewBox="0 0 32 32"
@@ -531,14 +538,13 @@ export default function IndexPage() {
                         <line x1="16" y1="12" x2="22" y2="18"></line>
                       </g>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        <section className="contact-section section-padding" id="section_6">
+        {/*<section className="contact-section section-padding" id="section_6">
           <div className="container">
             <div className="row">
               <div className="col-lg-8 col-12 mx-auto">
@@ -661,12 +667,12 @@ export default function IndexPage() {
                       referrerPolicy="no-referrer-when-downgrade"
                     />
                     {/*<!-- You can easily copy the embed code from Google Maps -> Share -> Embed a map // -->*/}
-                  </div>
+        {/*</div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+      </section>*/}
       </main>
     </>
   );
