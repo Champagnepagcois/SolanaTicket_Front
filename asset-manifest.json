@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Champagnepagcois/SolanaTicket_Front/static/css/main.dda1f829.css",
+    "main.js": "/Champagnepagcois/SolanaTicket_Front/static/js/main.51f04de0.js",
+    "static/js/175.ed4b224c.chunk.js": "/Champagnepagcois/SolanaTicket_Front/static/js/175.ed4b224c.chunk.js",
+    "static/js/787.85e1a587.chunk.js": "/Champagnepagcois/SolanaTicket_Front/static/js/787.85e1a587.chunk.js",
+    "static/media/pexels-2022395.mp4": "/Champagnepagcois/SolanaTicket_Front/static/media/pexels-2022395.23831cc34fb633cb8f82.mp4",
+    "static/media/bootstrap-icons.woff?": "/Champagnepagcois/SolanaTicket_Front/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/bootstrap-icons.woff2?": "/Champagnepagcois/SolanaTicket_Front/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "static/media/joecalih-UmTZqmMvQcw-unsplash.jpg": "/Champagnepagcois/SolanaTicket_Front/static/media/joecalih-UmTZqmMvQcw-unsplash.3aa8674865dcd0d8d7b9.jpg",
+    "static/media/nicholas-green-unsplash-blur.jpg": "/Champagnepagcois/SolanaTicket_Front/static/media/nicholas-green-unsplash-blur.c18c7d4f3aca72eecc06.jpg",
+    "static/media/pexels-alexander-suhorucov-6457579.jpg": "/Champagnepagcois/SolanaTicket_Front/static/media/pexels-alexander-suhorucov-6457579.24f354ec9b4a13ea622f.jpg",
+    "static/media/nainoa-shizuru-unsplash-blur.jpg": "/Champagnepagcois/SolanaTicket_Front/static/media/nainoa-shizuru-unsplash-blur.d64117028dd774bf77bd.jpg",
+    "static/media/abstral-official-bdlMO9z5yco-unsplash.jpg": "/Champagnepagcois/SolanaTicket_Front/static/media/abstral-official-bdlMO9z5yco-unsplash.011fb40ad0f5f079fe63.jpg",
+    "static/media/edward-unsplash-blur.jpg": "/Champagnepagcois/SolanaTicket_Front/static/media/edward-unsplash-blur.3c63cbc1402da003868a.jpg",
+    "static/media/soundtrap-rAT6FJ6wltE-unsplash.jpg": "/Champagnepagcois/SolanaTicket_Front/static/media/soundtrap-rAT6FJ6wltE-unsplash.fbece1b6a345ad256846.jpg",
+    "index.html": "/Champagnepagcois/SolanaTicket_Front/index.html",
+    "main.dda1f829.css.map": "/Champagnepagcois/SolanaTicket_Front/static/css/main.dda1f829.css.map",
+    "main.51f04de0.js.map": "/Champagnepagcois/SolanaTicket_Front/static/js/main.51f04de0.js.map",
+    "175.ed4b224c.chunk.js.map": "/Champagnepagcois/SolanaTicket_Front/static/js/175.ed4b224c.chunk.js.map",
+    "787.85e1a587.chunk.js.map": "/Champagnepagcois/SolanaTicket_Front/static/js/787.85e1a587.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dda1f829.css",
+    "static/js/main.51f04de0.js"
+  ]
+}
