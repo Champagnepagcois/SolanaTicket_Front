@@ -1,5 +1,5 @@
 import { Card, CardContent, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { Box } from "@mui/material";
 import { CardMedia } from "@mui/material";
 import { Button } from "@mui/material";
@@ -8,12 +8,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { loadLogin, loadLogout } from "../redux/actions/loginAction";
 import { render } from "react-dom";
 import ResponsiveDialog from "./ResponsiveDialog";
+import Chip from "@mui/material/Chip";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-
+import Stack from "@mui/material/Stack";
+import Divider from "@mui/material/Divider";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 
@@ -35,9 +37,14 @@ export default function ContainerResults({
   const [open, setOpen] = React.useState(false);
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
+  const [btncharging, setBtnCharging] = useState(false);
 
-  const handleClickOpen = () => {
-    setOpen(true);
+  const handleFakeBuy = () => {
+    setTimeout(() => {
+      setOpen(false);
+      alert(`Compra completada,verifica tu correo: ${user.data.user.email}`);
+      setBtnCharging(false);
+    }, 1000);
   };
 
   const handleClose = () => {
@@ -51,10 +58,7 @@ export default function ContainerResults({
       dispatch(loadLogin());
     }
     if (user.login) {
-      alert(
-        `Compra realizada, toda la informacion de la compra se envio a tu correo ${user.data.user.email}`
-      );
-      setOpen(false);
+      setOpen(true);
     }
   };
   return (
@@ -147,21 +151,93 @@ export default function ContainerResults({
                         aria-labelledby="responsive-dialog-title"
                       >
                         <DialogTitle id="responsive-dialog-title">
-                          {"Use Google's location service?"}
+                          {"Hola " + user.data
+                            ? user.data.user.username
+                            : "" +
+                              " necesitamos que confirmes la compra de tus boletos"}
                         </DialogTitle>
                         <DialogContent>
                           <DialogContentText>
-                            Let Google help apps determine location. This means
-                            sending anonymous location data to Google, even when
-                            no apps are running.
+                            <Box
+                              sx={{
+                                width: "100%",
+                                maxWidth: 500,
+                                bgcolor: "background.paper",
+                              }}
+                            >
+                              <Box sx={{ my: 3, mx: 2 }}>
+                                <Grid container alignItems="center">
+                                  <Grid item xs>
+                                    <Typography
+                                      gutterBottom
+                                      variant="h4"
+                                      component="div"
+                                    >
+                                      {nameEvent}
+                                    </Typography>
+                                  </Grid>
+                                  <Grid
+                                    item
+                                    width={250}
+                                    height={250}
+                                    sx={{ background: "blue" }}
+                                  >
+                                    <CardMedia
+                                      sx={{ height: 250, width: 250 }}
+                                      image={linkImage}
+                                      title={nameEvent}
+                                    />
+                                  </Grid>
+                                </Grid>
+                                <Typography
+                                  color="text.secondary"
+                                  variant="body2"
+                                >
+                                  {date + " • " + place}
+                                </Typography>
+
+                                <Typography
+                                  color="text.secondary"
+                                  variant="body2"
+                                >
+                                  {country}
+                                </Typography>
+                                <Typography
+                                  gutterBottom
+                                  variant="h6"
+                                  component="div"
+                                >
+                                  Lugar: A2
+                                </Typography>
+                              </Box>
+                              <Divider variant="middle" />
+                              <Box sx={{ m: 3 }}>
+                                <Typography
+                                  gutterBottom
+                                  variant="body1"
+                                  sx={{ color: "red" }}
+                                >
+                                  Costo Final: $0
+                                </Typography>
+                                <Divider variant="middle" />
+                              </Box>
+                            </Box>
                           </DialogContentText>
                         </DialogContent>
                         <DialogActions>
-                          <Button autoFocus onClick={handleClose}>
-                            Disagree
+                          <Button
+                            onClick={handleClose}
+                            color="error"
+                            variant="contained"
+                          >
+                            Cancelar
                           </Button>
-                          <Button onClick={handleShopping} autoFocus>
-                            Agree
+                          <Button
+                            onClick={() => handleFakeBuy()}
+                            variant="contained"
+                            color="success"
+                          >
+                            Comprar
                           </Button>
                         </DialogActions>
                       </Dialog>

@@ -2,7 +2,11 @@ import { ActionTypes } from "../constants/actions-types";
 
 const initialState = {
   login: false,
-  data: [],
+  data: {
+    user:{
+      username:"",
+    }
+  },
   loading: false,
   error: null,
 };

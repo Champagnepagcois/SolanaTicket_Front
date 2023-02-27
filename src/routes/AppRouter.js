@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import { Outlet } from "react-router";
+import Footer from "../components/Footer";
 import Header from "../components/header";
 
 export default function AppRouter() {
@@ -19,6 +20,9 @@ export default function AppRouter() {
         </Grid>
         <Grid item>
           <Outlet />
+        </Grid>
+        <Grid item>
+          <Footer />
         </Grid>
       </Grid>
     </>

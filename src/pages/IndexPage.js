@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Iframe from "react-iframe";
 import "../css/bootstrap-icons.css";
 import "../css/bootstrap.min.css";
@@ -9,10 +9,16 @@ import joecalih from "../images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg";
 import soundtrap from "../images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg";
 import abstral from "../images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg";
 export default function IndexPage() {
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(function (position) {
+      console.log("Latitude is :", position.coords.latitude);
+      console.log("Longitude is :", position.coords.longitude);
+    });
+  });
   return (
     <>
       <main>
-        <header className="site-header" style={{display:"none"}}>
+        <header className="site-header" style={{ display: "none" }}>
           <div className="container">
             <div className="row">
               <div className="col-lg-12 col-12 d-flex flex-wrap">
@@ -27,7 +33,10 @@ export default function IndexPage() {
           </div>
         </header>
 
-        <nav className="navbar navbar-expand-lg" style={{position:"absolute",width:"100%",display:"none"}}>
+        <nav
+          className="navbar navbar-expand-lg"
+          style={{ position: "absolute", width: "100%", display: "none" }}
+        >
           <div className="container">
             <a className="navbar-brand" href="index.html">
               Festava Live
@@ -107,7 +116,7 @@ export default function IndexPage() {
           <div className="container d-flex justify-content-center align-items-center">
             <div className="row">
               <div className="col-12 mt-auto mb-5 text-center">
-                <small>Festava Live Presents</small>
+                <small>SolanaTicket Presenta</small>
 
                 <h1 className="text-white mb-5">Night Live 2023</h1>
 
@@ -171,29 +180,39 @@ export default function IndexPage() {
             <div className="row">
               <div className="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
                 <div className="services-info">
-                  <h2 className="text-white mb-4">About Festava 2022</h2>
+                  <h2 className="text-white mb-4">Sobre SolanaTicket</h2>
 
                   <p className="text-white">
-                    Festava Live is free CSS template provided by TemplateMo
-                    website. This layout is built on Bootstrap v5.2.2 CSS
-                    library. You are free to use this template for your
-                    commercial website.
+                    Nuestro proyecto está revolucionando la forma en que se
+                    compran y venden boletos mediante el uso de la tecnología
+                    blockchain. Hemos creado una plataforma que permite a los
+                    organizadores de eventos vender entradas directamente a los
+                    fans, sin necesidad de intermediarios como revendedores de
+                    entradas o revendedores.
                   </p>
-
-                  <h6 className="text-white mt-4">
-                    Once in Lifetime Experience
-                  </h6>
-
                   <p className="text-white">
-                    You are not allowed to redistribute the template ZIP file on
-                    any other website without a permission.
+                    Nuestra plataforma de emisión de boletos basada en
+                    blockchain utiliza contratos inteligentes para garantizar
+                    que cada boleto sea único, seguro y no se pueda falsificar
+                    ni duplicar. Esto garantiza que los organizadores de eventos
+                    puedan vender entradas con confianza, sabiendo que solo las
+                    personas autorizadas serán admitidas en sus eventos.
+                  </p>
+                  <p className="text-white">
+                    Uno de los beneficios clave de nuestra plataforma es su
+                    transparencia. Cada compra y transferencia de boletos se
+                    registra en la cadena de bloques, creando un libro de
+                    contabilidad inmutable de todas las transacciones. Esto
+                    significa que los fanáticos pueden estar seguros de que
+                    están comprando boletos auténticos y que los organizadores
+                    de eventos pueden tener una visibilidad completa de quién
+                    asiste a sus eventos.
                   </p>
 
-                  <h6 className="text-white mt-4">Whole Night Party</h6>
-
+                  {/*<h6 className="text-white mt-4">Whole Night Party</h6>
                   <p className="text-white">
                     Please tell your friends about our website. Thank you.
-                  </p>
+                  </p>*/}
                 </div>
               </div>
 
@@ -207,10 +226,10 @@ export default function IndexPage() {
                     </div>
 
                     <div className="ms-4">
-                      <h3>a happy moment</h3>
+                      <h3>Los mejores momentos</h3>
 
                       <p className="mb-0">
-                        your amazing festival experience with us
+                        Disfruta de tus eventos favoritos con nosotros
                       </p>
                     </div>
                   </div>
@@ -649,172 +668,6 @@ export default function IndexPage() {
           </div>
         </section>
       </main>
-
-      <footer className="site-footer">
-        <div className="site-footer-top">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6 col-12">
-                <h2 className="text-white mb-lg-0">Festava Live</h2>
-              </div>
-
-              <div className="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
-                <ul className="social-icon d-flex justify-content-lg-end">
-                  <li className="social-icon-item">
-                    <a href="#" className="social-icon-link">
-                      <span className="bi-twitter"></span>
-                    </a>
-                  </li>
-
-                  <li className="social-icon-item">
-                    <a href="#" className="social-icon-link">
-                      <span className="bi-apple"></span>
-                    </a>
-                  </li>
-
-                  <li className="social-icon-item">
-                    <a href="#" className="social-icon-link">
-                      <span className="bi-instagram"></span>
-                    </a>
-                  </li>
-
-                  <li className="social-icon-item">
-                    <a href="#" className="social-icon-link">
-                      <span className="bi-youtube"></span>
-                    </a>
-                  </li>
-
-                  <li className="social-icon-item">
-                    <a href="#" className="social-icon-link">
-                      <span className="bi-pinterest"></span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 col-12 mb-4 pb-2">
-              <h5 className="site-footer-title mb-3">Links</h5>
-
-              <ul className="site-footer-links">
-                <li className="site-footer-link-item">
-                  <a href="#" className="site-footer-link">
-                    Home
-                  </a>
-                </li>
-
-                <li className="site-footer-link-item">
-                  <a href="#" className="site-footer-link">
-                    About
-                  </a>
-                </li>
-
-                <li className="site-footer-link-item">
-                  <a href="#" className="site-footer-link">
-                    Artists
-                  </a>
-                </li>
-
-                <li className="site-footer-link-item">
-                  <a href="#" className="site-footer-link">
-                    Schedule
-                  </a>
-                </li>
-
-                <li className="site-footer-link-item">
-                  <a href="#" className="site-footer-link">
-                    Pricing
-                  </a>
-                </li>
-
-                <li className="site-footer-link-item">
-                  <a href="#" className="site-footer-link">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-              <h5 className="site-footer-title mb-3">Have a question?</h5>
-
-              <p className="text-white d-flex mb-1">
-                <a href="tel: 090-080-0760" className="site-footer-link">
-                  090-080-0760
-                </a>
-              </p>
-
-              <p className="text-white d-flex">
-                <a href="mailto:hello@company.com" className="site-footer-link">
-                  hello@company.com
-                </a>
-              </p>
-            </div>
-
-            <div className="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
-              <h5 className="site-footer-title mb-3">Location</h5>
-
-              <p className="text-white d-flex mt-3 mb-2">
-                Silang Junction South, Tagaytay, Cavite, Philippines
-              </p>
-
-              <a className="link-fx-1 color-contrast-higher mt-3" href="#">
-                <span>Our Maps</span>
-                <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
-                  <g
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <circle cx="16" cy="16" r="15.5"></circle>
-                    <line x1="10" y1="18" x2="16" y2="12"></line>
-                    <line x1="16" y1="12" x2="22" y2="18"></line>
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="site-footer-bottom">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-3 col-12 mt-5">
-                <p className="copyright-text">
-                  Copyright © 2036 Festava Live Company
-                </p>
-              </div>
-
-              <div className="col-lg-8 col-12 mt-lg-5">
-                <ul className="site-footer-links">
-                  <li className="site-footer-link-item">
-                    <a href="#" className="site-footer-link">
-                      Terms &amp; Conditions
-                    </a>
-                  </li>
-
-                  <li className="site-footer-link-item">
-                    <a href="#" className="site-footer-link">
-                      Privacy Policy
-                    </a>
-                  </li>
-
-                  <li className="site-footer-link-item">
-                    <a href="#" className="site-footer-link">
-                      Your Feedback
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </>
   );
 }

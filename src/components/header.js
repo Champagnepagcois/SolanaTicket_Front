@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Box, height, textAlign } from "@mui/system";
 import { Grid, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -37,6 +37,15 @@ export default function Header(props) {
   let [searchParams, setSearchParams] = useSearchParams();
   let [searchInput, setSearchInput] = useState("");
   const trigger = useScrollTrigger();
+
+  useEffect(()=> {
+    if ("geolocation" in navigator) {
+      console.log("Available");
+    } else {
+      console.log("Not Available");
+    }
+  },[])
+
   const login = async (e) => {
     alert("Para cerrar sesion da clic en donde dice tu usuario");
     dispatch(loadLogin());
