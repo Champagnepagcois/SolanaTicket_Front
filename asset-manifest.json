@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/SolanaTicket_Front/index/static/css/main.7706a82e.css",
-    "main.js": "/SolanaTicket_Front/index/static/js/main.7250b721.js",
-    "static/js/175.ed4b224c.chunk.js": "/SolanaTicket_Front/index/static/js/175.ed4b224c.chunk.js",
-    "static/js/787.85e1a587.chunk.js": "/SolanaTicket_Front/index/static/js/787.85e1a587.chunk.js",
-    "static/media/teatro-yiran-ding-vtZqNeV_dlA-unsplash.jpg": "/SolanaTicket_Front/index/static/media/teatro-yiran-ding-vtZqNeV_dlA-unsplash.2342bf7534e72bc2659e.jpg",
-    "static/media/pexels-2022395.mp4": "/SolanaTicket_Front/index/static/media/pexels-2022395.23831cc34fb633cb8f82.mp4",
-    "static/media/f1-defrente-luis-jose-torrealba-E3PiwZJ8i1M-unsplash.jpg": "/SolanaTicket_Front/index/static/media/f1-defrente-luis-jose-torrealba-E3PiwZJ8i1M-unsplash.3d5dee2f179a0cdd871a.jpg",
-    "static/media/bootstrap-icons.woff?": "/SolanaTicket_Front/index/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
-    "static/media/bootstrap-icons.woff2?": "/SolanaTicket_Front/index/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
-    "static/media/joecalih-UmTZqmMvQcw-unsplash.jpg": "/SolanaTicket_Front/index/static/media/joecalih-UmTZqmMvQcw-unsplash.3aa8674865dcd0d8d7b9.jpg",
-    "static/media/nicholas-green-unsplash-blur.jpg": "/SolanaTicket_Front/index/static/media/nicholas-green-unsplash-blur.c18c7d4f3aca72eecc06.jpg",
-    "static/media/pexels-alexander-suhorucov-6457579.jpg": "/SolanaTicket_Front/index/static/media/pexels-alexander-suhorucov-6457579.24f354ec9b4a13ea622f.jpg",
-    "static/media/nainoa-shizuru-unsplash-blur.jpg": "/SolanaTicket_Front/index/static/media/nainoa-shizuru-unsplash-blur.d64117028dd774bf77bd.jpg",
-    "static/media/abstral-official-bdlMO9z5yco-unsplash.jpg": "/SolanaTicket_Front/index/static/media/abstral-official-bdlMO9z5yco-unsplash.011fb40ad0f5f079fe63.jpg",
-    "static/media/edward-unsplash-blur.jpg": "/SolanaTicket_Front/index/static/media/edward-unsplash-blur.3c63cbc1402da003868a.jpg",
-    "static/media/soundtrap-rAT6FJ6wltE-unsplash.jpg": "/SolanaTicket_Front/index/static/media/soundtrap-rAT6FJ6wltE-unsplash.fbece1b6a345ad256846.jpg",
-    "index.html": "/SolanaTicket_Front/index/index.html",
-    "main.7706a82e.css.map": "/SolanaTicket_Front/index/static/css/main.7706a82e.css.map",
-    "main.7250b721.js.map": "/SolanaTicket_Front/index/static/js/main.7250b721.js.map",
-    "175.ed4b224c.chunk.js.map": "/SolanaTicket_Front/index/static/js/175.ed4b224c.chunk.js.map",
-    "787.85e1a587.chunk.js.map": "/SolanaTicket_Front/index/static/js/787.85e1a587.chunk.js.map"
+    "main.css": "/SolanaTicket_Front/static/css/main.7ed24e6d.css",
+    "main.js": "/SolanaTicket_Front/static/js/main.fc6d467a.js",
+    "static/js/175.ed4b224c.chunk.js": "/SolanaTicket_Front/static/js/175.ed4b224c.chunk.js",
+    "static/js/787.85e1a587.chunk.js": "/SolanaTicket_Front/static/js/787.85e1a587.chunk.js",
+    "static/media/teatro-yiran-ding-vtZqNeV_dlA-unsplash.jpg": "/SolanaTicket_Front/static/media/teatro-yiran-ding-vtZqNeV_dlA-unsplash.2342bf7534e72bc2659e.jpg",
+    "static/media/pexels-2022395.mp4": "/SolanaTicket_Front/static/media/pexels-2022395.23831cc34fb633cb8f82.mp4",
+    "static/media/f1-defrente-luis-jose-torrealba-E3PiwZJ8i1M-unsplash.jpg": "/SolanaTicket_Front/static/media/f1-defrente-luis-jose-torrealba-E3PiwZJ8i1M-unsplash.3d5dee2f179a0cdd871a.jpg",
+    "static/media/bootstrap-icons.woff?": "/SolanaTicket_Front/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/bootstrap-icons.woff2?": "/SolanaTicket_Front/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "static/media/joecalih-UmTZqmMvQcw-unsplash.jpg": "/SolanaTicket_Front/static/media/joecalih-UmTZqmMvQcw-unsplash.3aa8674865dcd0d8d7b9.jpg",
+    "static/media/nicholas-green-unsplash-blur.jpg": "/SolanaTicket_Front/static/media/nicholas-green-unsplash-blur.c18c7d4f3aca72eecc06.jpg",
+    "static/media/pexels-alexander-suhorucov-6457579.jpg": "/SolanaTicket_Front/static/media/pexels-alexander-suhorucov-6457579.24f354ec9b4a13ea622f.jpg",
+    "static/media/nainoa-shizuru-unsplash-blur.jpg": "/SolanaTicket_Front/static/media/nainoa-shizuru-unsplash-blur.d64117028dd774bf77bd.jpg",
+    "static/media/abstral-official-bdlMO9z5yco-unsplash.jpg": "/SolanaTicket_Front/static/media/abstral-official-bdlMO9z5yco-unsplash.011fb40ad0f5f079fe63.jpg",
+    "static/media/edward-unsplash-blur.jpg": "/SolanaTicket_Front/static/media/edward-unsplash-blur.3c63cbc1402da003868a.jpg",
+    "static/media/soundtrap-rAT6FJ6wltE-unsplash.jpg": "/SolanaTicket_Front/static/media/soundtrap-rAT6FJ6wltE-unsplash.fbece1b6a345ad256846.jpg",
+    "index.html": "/SolanaTicket_Front/index.html",
+    "main.7ed24e6d.css.map": "/SolanaTicket_Front/static/css/main.7ed24e6d.css.map",
+    "main.fc6d467a.js.map": "/SolanaTicket_Front/static/js/main.fc6d467a.js.map",
+    "175.ed4b224c.chunk.js.map": "/SolanaTicket_Front/static/js/175.ed4b224c.chunk.js.map",
+    "787.85e1a587.chunk.js.map": "/SolanaTicket_Front/static/js/787.85e1a587.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7706a82e.css",
-    "static/js/main.7250b721.js"
+    "static/css/main.7ed24e6d.css",
+    "static/js/main.fc6d467a.js"
   ]
 }
