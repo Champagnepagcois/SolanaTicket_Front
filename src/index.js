@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Provider } from "react-redux";
 import { render } from "react-dom";
 import store from "./redux/store";
-
+import {HashRouter} from "react-router-dom"
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
@@ -20,15 +20,17 @@ const rootElement = document.getElementById("root");
 render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Root />}>
+            <Route index element={<IndexPage/>}/>
             <Route path="index" element={<IndexPage />} />
             <Route path="home" element={<HomePage />} />
             <Route path="search" element={<SearchPage />} />
+            <Route path="*" element={<Navigate to="/home" replace/>}/>
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   </React.StrictMode>,
   rootElement
