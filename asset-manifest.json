@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SolanaTicket_Front/static/css/main.7ed24e6d.css",
-    "main.js": "/SolanaTicket_Front/static/js/main.760d6727.js",
+    "main.js": "/SolanaTicket_Front/static/js/main.beaa5a1f.js",
     "static/js/175.ed4b224c.chunk.js": "/SolanaTicket_Front/static/js/175.ed4b224c.chunk.js",
     "static/js/787.85e1a587.chunk.js": "/SolanaTicket_Front/static/js/787.85e1a587.chunk.js",
     "static/media/teatro-yiran-ding-vtZqNeV_dlA-unsplash.jpg": "/SolanaTicket_Front/static/media/teatro-yiran-ding-vtZqNeV_dlA-unsplash.2342bf7534e72bc2659e.jpg",
@@ -18,12 +18,12 @@
     "static/media/soundtrap-rAT6FJ6wltE-unsplash.jpg": "/SolanaTicket_Front/static/media/soundtrap-rAT6FJ6wltE-unsplash.fbece1b6a345ad256846.jpg",
     "index.html": "/SolanaTicket_Front/index.html",
     "main.7ed24e6d.css.map": "/SolanaTicket_Front/static/css/main.7ed24e6d.css.map",
-    "main.760d6727.js.map": "/SolanaTicket_Front/static/js/main.760d6727.js.map",
+    "main.beaa5a1f.js.map": "/SolanaTicket_Front/static/js/main.beaa5a1f.js.map",
     "175.ed4b224c.chunk.js.map": "/SolanaTicket_Front/static/js/175.ed4b224c.chunk.js.map",
     "787.85e1a587.chunk.js.map": "/SolanaTicket_Front/static/js/787.85e1a587.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ed24e6d.css",
-    "static/js/main.760d6727.js"
+    "static/js/main.beaa5a1f.js"
   ]
 }
